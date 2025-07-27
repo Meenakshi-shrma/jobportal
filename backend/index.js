@@ -75,7 +75,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 
 const corsOption = {
-  origin: "http://localhost:5173", // frontend Vite port
+  origin: "https://jobportal-1hp0.onrender.com", // frontend Vite port
   credentials: true,
 };
 app.use(cors(corsOption));

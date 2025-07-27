@@ -17,7 +17,8 @@ const ApplicantsTable = () => {
         console.log('called');
         
         try {
-            const res = await axios.post(`${APPLICATION_API_END_POINT}/status/${id}/update`,{status},{
+            const res = await axios.post( `${APPLICATION_API_END_POINT}/status/${id}/update`, 
+        { status },{
                 withCredentials:true
             });
             if(res.data.success){
